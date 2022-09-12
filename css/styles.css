@@ -8,7 +8,11 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
+    --primary-black-color: #000;
     --additional-color: rgba(255, 255, 255, 0.6);
+    --background-grey-color: #2F303A;
+    --additional-background-color: #F5F4FA;
+    --portfolio-background: #EEEEEE;
 }
 
 body {
@@ -26,16 +30,16 @@ a {
 }
 
 .header-logo {
-    color: #000000;
-    font-family: "Raleway";
+    color: var(--primary-black-color);
+    font-family: "Raleway", "Sans-Serif";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
 .header-logo .accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .header-list .link {
@@ -69,7 +73,7 @@ a {
 }
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--background-grey-color);
 }
 
 .hero-title {
@@ -83,8 +87,7 @@ a {
 }
 
 button {
-    color: var(--title-text-color);
-    background-color: var(--primary-white-color);
+    color: var(--primary-white-color)
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -93,22 +96,42 @@ button {
     cursor: pointer;
 }
 
-button:hover,
-button:focus {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
-}
-
 .hero-button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 .button-filter {
+    background-color: var(--additional-background-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 .advanteges-item {
@@ -122,8 +145,12 @@ button:focus {
 .advanteges-text {
     color: var(--primary-text-color);
     font-size: 14px;
-    line-height: 1.171;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+}
+
+.section-team {
+    background-color: var(--additional-background-color);
 }
 
 .about-title,
@@ -133,6 +160,12 @@ button:focus {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+}
+
+.team-card {
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .name {
@@ -150,11 +183,15 @@ button:focus {
     letter-spacing: 0.03em;
 }
 
+.examples-card {
+    background-color: var(--portfolio-background);
+}
+
 .examples-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;
+    line-height: 2.00;
     letter-spacing: 0.06em;
 }
 
@@ -166,12 +203,12 @@ button:focus {
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-grey-color);
     font-family: "Roboto", "Sans-Serif";
 }
 
 .footer-logo {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
@@ -180,7 +217,7 @@ button:focus {
 }
 
 .footer-logo .accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .footer-contact .link {
@@ -193,5 +230,5 @@ button:focus {
 
 .footer-contact .link:hover,
 .footer-contact .link:focus {
-    color: var(--primary-white-color);
+    color: var(--accent-color);
 }
