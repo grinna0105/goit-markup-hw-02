@@ -7,6 +7,7 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --accent-button-color: #188CE8;
     --primary-white-color: #FFFFFF;
     --primary-black-color: #000;
     --additional-color: rgba(255, 255, 255, 0.6);
@@ -18,7 +19,7 @@
 body {
     background-color: var(--primary-white-color);
     color: var(--title-text-color);
-    font-family: "Roboto", "Sans-Serif";
+    font-family: "Roboto", sans-serif;
 }   
 
 ul {
@@ -31,7 +32,7 @@ a {
 
 .header-logo {
     color: var(--primary-black-color);
-    font-family: "Raleway", "Sans-Serif";
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -87,7 +88,7 @@ a {
 }
 
 button {
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -104,12 +105,13 @@ button {
 .hero-button:hover,
 .hero-button:focus {
     color: var(--primary-white-color);
-    background-color: var(--accent-color);
+    background-color: var(--accent-button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
 .button-filter {
+    color: var(--title-text-color);
     background-color: var(--additional-background-color);
     font-weight: 500;
     font-size: 16px;
@@ -183,10 +185,6 @@ button {
     letter-spacing: 0.03em;
 }
 
-.examples-card {
-    background-color: var(--portfolio-background);
-}
-
 .examples-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -230,5 +228,5 @@ button {
 
 .footer-contact .link:hover,
 .footer-contact .link:focus {
-    color: var(--accent-color);
+    color: var(--primary-white-color);
 }
